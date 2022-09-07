@@ -1,0 +1,335 @@
+:root {
+    font-family: 'Nunito Sans', sans-serif;
+    --color-button:#f97316;
+    --color-begie: #ffedd5;
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.beginning {
+    background: url(hero.jpg);
+    height: 800px;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+.navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: var(--color-button);
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+.beginner-text {
+    max-width: 50%;
+}
+
+.beginner-text-bold {
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.beginner-text p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    max-width: 90%;
+    color: #57534E;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.orange-button {
+    background-color:var(--color-button);
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 1px 1px 4px #d6d3d1;
+
+}
+
+.orange-button:hover {
+    background-color: #FF4900;
+    transition: 0.5s;
+    box-shadow:5px 5px 5px -2px #999999;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f4f2;
+    width: 33%;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.icon-benefit {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: white;
+    background-color:var(--color-button);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px #d6d3d1;
+    font-size: 30px;
+    text-align: center;
+}
+
+.benefit-H {
+    padding-bottom: 10px;
+}
+
+.benefit p {
+    color: #57534E;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+#group-people-img {
+    width: 500px;
+}
+
+.about-us {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.about-us h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.about-us-text {
+    line-height: 20px;
+    margin-top: 20px;
+
+}
+
+.free-lesson {
+    height: 450px;
+    background-color: var(--color-begie);
+    width: 100%;
+}
+
+.free-lesson-content {
+    text-align: center;
+    padding-top: 1px;
+}
+
+.free-lesson-content p {
+    font-size: 17px;
+}
+
+.lesson-input {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #cfcdcc;
+    margin-right: 12px;
+    margin-top: 5px;
+}
+
+.free-lesson-form {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.free-lesson-button {
+    background-color: var(--color-button);
+    color:white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.free-lesson-content {
+    margin-bottom: 80px;
+}
+
+.title-all {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.review-name {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.review-text {
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.review {
+    border-bottom: 1px solid #b8b7b6;
+    padding: 30px 0;
+    width: 600px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.abonements {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.abonement {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d6d3d1;
+    padding: 10px;
+    width:30%;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+.abonement:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.abonement-detail {
+    display: flex;
+    align-items: center;
+    color: #78716C;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.abonement-time {
+    color: var(--color-button);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.abonement-price {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-check {
+    color: greenyellow;
+    margin-right: 5px;
+}
+
+.abonement-button {
+    background-color: var(--color-begie);
+    border: none;
+    color: var(--color-button);
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5%;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.abonement-details {
+    flex-grow: 1;
+}
+
+.abonement-section {
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 150px;
+    color: #78716C;
+    background-color: #E7E5E4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-footer {
+    font-size: 23px;
+    margin-right: 10px;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: baseline;
+}
+
+.icons a {
+    color: #78716C;
+}
+
+.icons a:hover {
+    color: var(--color-button);
+}
+
+.abonement-button:hover {
+    background-color: var(--color-button);
+    color: white;
+}
