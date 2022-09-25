@@ -12,6 +12,14 @@
     width: 100%;
 }
 
+@media (max-width:600px) {
+    .container {
+        max-width: 550px;
+        margin: 0 auto;
+        width: 100%
+    }
+}    
+
 .beginning {
     background: url(hero.jpg);
     height: 800px;
@@ -31,6 +39,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -63,11 +72,24 @@ i {
     max-width: 50%;
 }
 
+@media (max-width:600px) {
+    .orange-button {
+        width: 100%;
+    }
+}    
+
 .beginner-text-bold {
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 80px;
     margin-bottom: 30px;
+}
+
+@media (max-width:600px) {
+    .beginner-text-bold {
+        font-weight: 400;
+        font-size: 50px;
+    }
 }
 
 .beginner-text p {
@@ -101,6 +123,12 @@ i {
     flex-direction: row;
 }
 
+@media (max-width:600px) {
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 .benefit {
@@ -113,6 +141,13 @@ i {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 100px;
+}
+
+@media (max-width:600px) {
+    .benefit {
+        width: 90%; 
+        margin: 30px;
+    }
 }
 
 .icon-benefit {
@@ -139,12 +174,19 @@ i {
 }
 
 #group-people-img {
-    width: 500px;
+    width: 100%;
 }
 
 .about-us {
     display: flex;
     margin-bottom: 50px;
+}
+
+@media (max-width:600px) {
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .about-us h3 {
@@ -160,9 +202,15 @@ i {
 }
 
 .free-lesson {
-    height: 450px;
     background-color: var(--color-begie);
     width: 100%;
+    padding-bottom: 30px;
+}
+
+@media (max-width:600px) {
+    .free-lesson button {
+        margin-top:20px;
+    }
 }
 
 .free-lesson-content {
@@ -181,6 +229,22 @@ i {
     border: 1px solid #cfcdcc;
     margin-right: 12px;
     margin-top: 5px;
+}
+
+@media (max-width:600px) {
+    .lesson-input{
+        margin-top:20px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:600px) {
+    .form-media {
+    flex-basis: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    }
 }
 
 .free-lesson-form {
@@ -224,7 +288,7 @@ i {
 .review {
     border-bottom: 1px solid #b8b7b6;
     padding: 30px 0;
-    width: 600px;
+    max-width: 600px;
 }
 
 section {
@@ -240,6 +304,14 @@ section {
     padding-bottom: 50px;
 }
 
+@media (max-width:600px) {
+    .abonements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .abonement {
     display: flex;
     flex-direction: column;
@@ -248,6 +320,15 @@ section {
     width:30%;
     margin: 10px;
     border-radius: 5%;
+}
+
+@media (max-width:600px) {
+    .abonement {
+        width: 90%;
+        display: flex;
+        align-items: center;
+    
+    }
 }
 
 .abonement:hover {
@@ -321,12 +402,28 @@ footer {
     vertical-align: baseline;
 }
 
+@media (max-width:600px) {
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
 .icons a {
     color: #78716C;
 }
 
 .icons a:hover {
     color: var(--color-button);
+}
+
+@media (max-width:600px) {
+    .icons {
+        margin: 20px 0;
+        
+    }
 }
 
 .abonement-button:hover {
