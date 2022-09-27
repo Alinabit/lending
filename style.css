@@ -6,6 +6,7 @@
 
 }
 
+
 .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -15,18 +16,28 @@
 @media (max-width:600px) {
     .container {
         max-width: 550px;
-        margin: 0 auto;
-        width: 100%
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .overlay {
+        background: white;
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 }    
 
+
 .beginning {
     background: url(hero.jpg);
-    height: 800px;
     background-position: center top;
     background-size: cover;
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 #logo {
@@ -47,6 +58,8 @@ header {
     display: flex;
     flex-direction: row;
     margin-right: 5px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 i {
@@ -69,12 +82,22 @@ i {
 }
 
 .beginner-text {
-    max-width: 50%;
+    width: 50%;
+}
+
+.beginner-text button {
+    margin-bottom: 30px;
 }
 
 @media (max-width:600px) {
-    .orange-button {
+    .beginner-text {
         width: 100%;
+    }
+    .beginner-text h1 {
+        width: 60%;
+    }
+    .beginner-text p {
+        width: 50%;
     }
 }    
 
@@ -95,7 +118,6 @@ i {
 .beginner-text p {
     font-size: 20px;
     margin-bottom: 50px;
-    max-width: 90%;
     color: #57534E;
     font-weight: 300;
     line-height: 30px;
@@ -208,8 +230,10 @@ i {
 }
 
 @media (max-width:600px) {
-    .free-lesson button {
+    .orange-button {
         margin-top:20px;
+        font-size: 15px;
+        padding: 8px 16px;
     }
 }
 
