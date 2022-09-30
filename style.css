@@ -2,10 +2,12 @@
     font-family: 'Nunito Sans', sans-serif;
     --color-button:#f97316;
     --color-begie: #ffedd5;
-    box-sizing: border-box;
 
 }
 
+* {
+    box-sizing: border-box;
+}
 
 .container {
     max-width: 1024px;
@@ -18,7 +20,6 @@
         max-width: 550px;
         margin-right: 10px;
         margin-left: 10px;
-        width: 100%;
         padding: 10px 10px;
     }
     .beginning::before {
@@ -172,7 +173,7 @@ i {
 
 @media (max-width:600px) {
     .benefit {
-        width: 90%; 
+        width: 100%; 
         margin: 30px;
     }
 }
@@ -183,10 +184,10 @@ i {
     margin-bottom: 10px;
     color: white;
     background-color:var(--color-button);
-    padding: 10px;
+    padding-top: 5px;
     border-radius: 8px;
     box-shadow: 1px 1px 4px #d6d3d1;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -222,6 +223,7 @@ i {
     .about-us {
         flex-direction: column;
         align-items: center;
+        margin-top: 15px;
     }
 }
 
