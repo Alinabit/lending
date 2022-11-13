@@ -12,7 +12,7 @@
 .container {
     max-width: 1024px;
     margin: 0 auto;
-    width: 100%;
+    width: calc(100%-20px);
 }
 
 @media (max-width:600px) {
@@ -20,14 +20,23 @@
         max-width: 550px;
         margin-right: 10px;
         margin-left: 10px;
-        padding: 10px 10px;
+
     }
+
+    .container-relative-mob {
+        max-width: 550px;
+        margin-right: 10px;
+        margin-left: 10px;
+        position: relative;
+
+    }
+
+
     .beginning::before {
         content: "";
         position: absolute;
         background: white;
         opacity: 0.5;
-        position: absolute;
         width: 100%;
         height: 100%;
         z-index: -1;
@@ -58,6 +67,77 @@ header {
     align-items: center;
     flex-wrap: wrap;
     
+}
+
+@media (min-width:601px) {
+
+.container_mob {
+    display: none;
+}
+}
+
+@media (max-width:600px) {
+    .header-desk {
+        display: none;
+    }
+    #container_mob{
+        display: none;
+    }
+
+    #icons-close {
+        display: none;
+    }
+    .header_mob {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left:0;
+        top:0;
+        background-color: var(--color-button);
+        color: var(--color-begie);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 150px;
+        /*margin-top: 60px;*/
+    }
+
+    .header_mob a {
+        text-decoration: none;
+        color: var(--color-begie);
+    }
+
+    .header_mob p {
+        font-size: 20px;
+    }
+
+    .phone_mob {
+        flex-direction: row;
+        display: flex;
+    }
+
+
+    .logo-burger img {
+        height: 70px;
+        width: 70px;
+        
+    }
+
+    .icon-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    .logo-burger {
+        display: flex;
+        
+
+
+    }
+
 }
 
 .phone {
@@ -428,7 +508,7 @@ footer {
     color: #78716C;
     background-color: #E7E5E4;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -471,4 +551,8 @@ footer {
 .abonement-button:hover {
     background-color: var(--color-button);
     color: white;
+}
+
+body.noscroll {
+    overflow: hidden;
 }
